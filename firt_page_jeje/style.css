@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+}
+
+boby{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button.hover{
+    background-color: rgb(74, 24, 121);
+}
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.6;
+}
+
+header{
+    background-color: black;
+    margin: 0;
+    padding: 10px 21px;
+}
+
+header .container{
+    flex-direction: column;
+    align-items: center;  
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white
+}
+
+header .jeje2 a{
+    padding: 0px;
+}
+
+header .jeje3 a{
+    padding: 0px;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+header .jeje{
+    position: initial;
+    align-self: center;
+    display: flex;
+    justify-content: start;
+}
+
+header .jeje input{
+   padding: 5px 25px 5px 5px;
+   color: blueviolet;
+   border: 1px solid blueviolet;
+}
+
+header .jeje input::placeholder{
+    color: blueviolet;
+}
+
+header .jeje i{
+    position: initial;
+    margin-left: -25px;
+    top: 5px;
+    color: blueviolet;
+}
+
+header .jeje2 i{
+    position: absolute;
+    top: 250px;
+    margin-left: 10px;
+}
+
+header .jeje3 i{
+    position: absolute;
+    margin-left: 35px;
+    top: 250px;
+}
+
+header i{
+    font-size: 20px;
+    margin: 0 5px;
+    align-self: center;
+    color: blueviolet;
+}
+
+header input{
+    align-self: center;
+    border-radius: 10px;
+}
+
+
+header .logo{
+    text-align: center;
+    color: blueviolet;
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+}
+
+section a.hover{
+    background-color: rgb(74, 24, 121);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("media/siiiiuuu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+#REBAJAS{
+    background-color: rgb(30,30,30);
+}
+
+#REBAJAS .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("media/fck\ campanelli.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#REBAJAS h2{
+    color: white;
+}
+
+#ropa{
+    background-color: rgb(30,30,30);
+    color: white;
+   text-align: center;
+}
+
+#ropa .container{
+    padding: 55px 12px;
+}
+
+#ropa p{
+    display: none;
+}
+
+#ropa .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/nooo.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/jjjjj.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/nenes.jpg");
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        width: 99%;
+    }
+    
+    header .container{
+        flex-direction: row;
+    }
+
+    header .logo{
+        justify-content: flex-start;
+        text-align: start;
+        
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header .jeje{
+        position: initial;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .jeje i{
+        position: initial;
+    }
+
+    header .jeje2 i{
+        margin-left: 15px;
+        top: 0px;
+    }
+
+    header .jeje3 i{
+        margin-left: 5px;
+        top: 0px;
+    }
+
+    #ropa .container{
+        display: flex;
+        justify-content: center;
+   }
+
+}
+
